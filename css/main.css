@@ -555,6 +555,31 @@ legend + * {
   direction: ltr;
 }
 */
+
+.carousel-control-next-icon{
+background-color: darkgray;
+}
+
+.carousel-control-prev-icon{
+background-color: darkgrey;
+}
+
+.thumbnail-slider{
+white-space: nowrap;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+ scrollbar-width: thin;
+}
+.thumbnail-slider img{
+ max-width: 120px;
+flex: 0 0 auto;
+cursor: pointer;
+}
+
+.thumb{
+cursor: pointer;
+}
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -11851,3 +11876,4 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
