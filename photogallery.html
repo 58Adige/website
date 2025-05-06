@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripton" content="Explore the photo gallery and creative works of Ibrahim Ipek. Discover projects, certificates, abilities, and more on his personal portfolio site.">
+    <meta name="description" content="Explore the photo gallery and creative works of Ibrahim Ipek. Discover projects, certificates, abilities, and more on his personal portfolio site.">
     <meta name="keywords" content="Ibrahim Ipek, photo gallery, portfolio, personal site, certificates, abilities, web developer">
     <meta name="author" content="Ibrahim Ipek">
     <title>Ibrahim Ipek | Gallery Page</title>
@@ -100,45 +100,50 @@
         </div>
     </section>
     <section id="contact">
-        <div class="container-fluid bg-secondary text-white py-4">
-            <div class="container bg-secondary">
-            <form class="py-3 text-start">
-                <div class="row">   
-                    <div class="col-md-6 pt-2">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message" class="form-control"></textarea>
-                    </div>
-                    <div class="col-md-6 pt-2">
-                        <h2>Contact Us</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, rerum!</p>
-                            <div class="row mb-3">
-                                <div class="col-md-6 mb-3">
-                                    <input 
-                                        type="text"
-                                        placeholder="Enter Your Name"
-                                        class="form-control"
-                                    />
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input 
-                                        type="email"
-                                        placeholder="Enter Your Email"
-                                        class="form-control"
-                                    />
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary">Send Message</button>
-                            </div>
-                    </div>
-                </div>
-            </form>
-            </div>
-        </div>
-    </section>
-    <footer>
+      <div class="container-fluid bg-secondary text-white py-4">
+          <div class="container bg-secondary">
+          <form id="contactForm" class="py-3 text-start">
+              <div class="row">   
+                  <div class="col-md-6 pt-2">
+                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message" class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-6 pt-2">
+                      <h2>Contact Us</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, rerum!</p>
+                          <div class="row mb-3">
+                              <div class="col-md-6 mb-3">
+                                  <input 
+                                      type="text"
+                                      name="name"
+                                      placeholder="Enter Your Name"
+                                      class="form-control"
+                                  />
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <input 
+                                      type="email"
+                                      name="email"
+                                      placeholder="Enter Your Email"
+                                      class="form-control"
+                                  />
+                              </div>
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" 
+                              name="subject"
+                              class="form-control" 
+                              placeholder="Subject">
+                          </div>
+                          <div class="d-flex justify-content-center">
+                              <button type="submit" class="btn btn-primary">Send Message</button>
+                          </div>
+                  </div>
+              </div>
+          </form>
+          </div>
+      </div>
+  </section>
+  <footer>
       <div class="container-fluid bg-primary border-top p-2">
         <div class="container bg-primary">
           <div class="row text-center text-md-start">
@@ -155,6 +160,37 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("NLi_gpVVeWgs9_P8F");
+      })();
+    
+      document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+    
+        const form = this;
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+    
+        emailjs.sendForm("service_jer3eii", "template_olij7xs", form)
+          .then(() => {
+            form.reset();
+            alert("Mail Sent Successfully!");
+          }, (error) => {
+            alert("Error: " + JSON.stringify(error));
+          })
+          .finally(() => {
+
+            submitButton.disabled = false;
+            submitButton.textContent = "Send Message";
+          });
+      });
+    </script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const thumbnails = document.querySelectorAll('.thumb');

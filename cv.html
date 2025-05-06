@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripton" content="Explore the photo gallery and creative works of Ibrahim Ipek. Discover projects, certificates, abilities, and more on his personal portfolio site.">
+    <meta name="description" content="Explore the photo gallery and creative works of Ibrahim Ipek. Discover projects, certificates, abilities, and more on his personal portfolio site.">
     <meta name="keywords" content="Ibrahim Ipek, photo gallery, portfolio, personal site, certificates, abilities, web developer">
     <meta name="author" content="Ibrahim Ipek">
     <title>Ibrahim Ipek | CV Page</title>
@@ -76,8 +76,8 @@
                         <h2>Ibrahim Ipek</h2>
                         <p>Student of Zonguldak Ecevit University - Computer Engineering - 2.the grade</p>
                         <p>Mail: ibrahim58ipek@gmail.com</p>
-                        <p>Social Media: <a href="https://www.github.com/58Adige" class="text-white">Github</a> <a href="https://www.linkedin.com/in/ibrahim-ipek-b44bb32b8/" class="text-white">LinkedIn</a>
-                        <a href="https://www.instagram.com/usr1" class="text-white">Instagram</a> <a href="https://www.youtube.com/@ibrahimipek58" class="text-white">Youtube</a></p>
+                        <p>Social Media: <a href="https://www.github.com/58Adige" target="_blank" class="text-white">Github</a> <a href="https://www.linkedin.com/in/ibrahim-ipek-b44bb32b8/" target="_blank" class="text-white">LinkedIn</a>
+                        <a href="https://www.instagram.com/usr1" target="_blank" class="text-white">Instagram</a> <a href="https://www.youtube.com/@ibrahimipek58" target="_blank" class="text-white">Youtube</a></p>
                         <p>C, C++, C#, Java / HTML5, CSS / Git</p>  
                     </div>
                 </div>
@@ -268,7 +268,7 @@
     <section id="contact">
         <div class="container-fluid bg-secondary text-white py-4">
             <div class="container bg-secondary">
-            <form class="py-3 text-start">
+            <form id="contactForm" class="py-3 text-start">
                 <div class="row">   
                     <div class="col-md-6 pt-2">
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message" class="form-control"></textarea>
@@ -280,6 +280,7 @@
                                 <div class="col-md-6 mb-3">
                                     <input 
                                         type="text"
+                                        name="name"
                                         placeholder="Enter Your Name"
                                         class="form-control"
                                     />
@@ -287,16 +288,20 @@
                                 <div class="col-md-6 mb-3">
                                     <input 
                                         type="email"
+                                        name="email"
                                         placeholder="Enter Your Email"
                                         class="form-control"
                                     />
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" 
+                                name="subject"
+                                class="form-control" 
+                                placeholder="Subject">
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary">Send Message</button>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
                             </div>
                     </div>
                 </div>
@@ -321,6 +326,37 @@
           </div>
         </div>
       </footer>
+
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+        (function() {
+          emailjs.init("NLi_gpVVeWgs9_P8F");
+        })();
+      
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+          e.preventDefault();
+      
+          const form = this;
+          const submitButton = form.querySelector('button[type="submit"]');
+          
+          submitButton.disabled = true;
+          submitButton.textContent = "Sending...";
+      
+          emailjs.sendForm("service_jer3eii", "template_olij7xs", form)
+            .then(() => {
+              form.reset();
+              alert("Mail Sent Successfully!");
+            }, (error) => {
+              alert("Error: " + JSON.stringify(error));
+            })
+            .finally(() => {
+  
+              submitButton.disabled = false;
+              submitButton.textContent = "Send Message";
+            });
+        });
+      </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
