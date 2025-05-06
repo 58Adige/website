@@ -1,7 +1,18 @@
-$primary: #5A5A5A;
-$secondary: #A89F91;
+$primary: #DBE2EF;
+$secondary: #3F72AF;
 $light: #F5F5F5;    
-$dark: #444444;     
+$dark: #112D4E;     
 $info: #A8C0D6;        
 $warning: #B45F06;       
 $muted: #888888;  
+
+.fixed-space {
+    padding-bottom: 40px;
+    background-color: #3F72AF; 
+  }
+
+  .thumb {
+    height: 10px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
