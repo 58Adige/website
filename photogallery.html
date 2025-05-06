@@ -67,7 +67,7 @@
 </header>
     <section id="photos" class="fixed-space">
         <div class="container-fluid bg-secondary">
-            <div class="container bg-primary border p-2">
+            <div class="container bg-primary border rounded-4 p-2 shadow-lg">
                 <div class="row">
                     <div class="col text-start">
                        <img id="mainImage" src="./resources/cr16.jpg" alt="Loading..." class="img-fluid mb-3 border">
@@ -76,7 +76,7 @@
                         </div> 
                     </div>
                     <div class="container">
-                     <div class="thumbnail-slider d-flex overflow-auto gap-2 p-2 border bg-secondary">
+                     <div class="thumbnail-slider d-flex overflow-auto gap-2 p-2 border bg-dark">
                       <img src="./resources/cr1.jpg" class="img-thumbnail thumb" alt="Huawei - Arge Bulusmasi Katilim Sertifikasi" data-description="Huawei - Arge Bulusmasi Katilim Sertifikasi">
                       <img src="./resources/cr2.jpg" class="img-thumbnail thumb" alt="Etkin Kampus - Canva Kariyer Zirvesi Katilim Sertifikasi" data-description="Etkin Kampus - Canva Kariyer Zirvesi Katilim Sertifikasi">
                       <img src="./resources/cr3.jpg" class="img-thumbnail thumb" alt="BTK - C Programlama Dili Katilim Sertifikasi" data-description="BTK - C Programlama Dili Katilim Sertifikasi">
@@ -105,7 +105,12 @@
           <form id="contactForm" class="py-3 text-start">
               <div class="row">   
                   <div class="col-md-6 pt-2">
-                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message" class="form-control"></textarea>
+                      <textarea name="message" 
+                      id="message" 
+                      cols="30" rows="12"
+                      style="resize: none;" 
+                      placeholder="Enter Your Message" 
+                      class="shadow-lg form-control"></textarea>
                   </div>
                   <div class="col-md-6 pt-2">
                       <h2>Contact Us</h2>
@@ -116,7 +121,7 @@
                                       type="text"
                                       name="name"
                                       placeholder="Enter Your Name"
-                                      class="form-control"
+                                      class="form-control shadow-lg"
                                   />
                               </div>
                               <div class="col-md-6 mb-3">
@@ -124,18 +129,18 @@
                                       type="email"
                                       name="email"
                                       placeholder="Enter Your Email"
-                                      class="form-control"
+                                      class="form-control shadow-lg"
                                   />
                               </div>
                           </div>
-                          <div class="mb-3">
+                          <div class="mb-3 fixed-space">
                               <input type="text" 
                               name="subject"
-                              class="form-control" 
+                              class="form-control shadow-lg" 
                               placeholder="Subject">
                           </div>
                           <div class="d-flex justify-content-center">
-                              <button type="submit" class="btn btn-primary">Send Message</button>
+                              <button type="submit" class="btn btn-primary shadow-lg">Send Message</button>
                           </div>
                   </div>
               </div>
@@ -144,22 +149,22 @@
       </div>
   </section>
   <footer>
-      <div class="container-fluid bg-primary border-top p-2">
-        <div class="container bg-primary">
-          <div class="row text-center text-md-start">
-            <div class="col-12 col-md-4 p-2">
-              <h4>Since 2004</h4>
-            </div>
-            <div class="col-12 col-md-4 p-2">
-              <h4>&copy; 2025</h4>
-            </div>
-            <div class="col-12 col-md-4 p-2 text-md-end">
-              <h4>Made by İbrahim İpek</h4>
-            </div>
+    <div class="container-fluid bg-dark border-top p-2 text-white">
+      <div class="container bg-dark">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-4 p-2">
+            <h4>Since 2004</h4>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <h4>&copy; 2025</h4>
+          </div>
+          <div class="col-12 col-md-4 p-2 text-md-end">
+            <h4>Made by İbrahim İpek</h4>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>

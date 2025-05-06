@@ -67,20 +67,20 @@
     </header>
     <section id="about" class="fixed-space">
         <div class="container-fluid bg-secondary">
-            <div class="container bg-primary border p-2 ">
+            <div class="container bg-primary border border-white border-2 p-2 rounded-4 shadow-lg">
                 <div class="row">
                     <div class="col-md-5 pt-2">
                     <div class="row pt-5 m-2">
                       <img src="./resources/photo.jpg" class="img-fluid border" alt="">
-                      <h2>AAA</h2>
+                      <h2>Baslık 1</h2>
                     </div> 
                     <div class="row pt-5 m-2">
                       <img src="./resources/photo.jpg" class="img-fluid border" alt="">
-                      <h2>AAA</h2>
+                      <h2>Baslık 2</h2>
                     </div> 
                     <div class="row pt-5 m-2">
                       <img src="./resources/photo.jpg" class="img-fluid border" alt="">
-                      <h2>AAA</h2>
+                      <h2>Baslık 3</h2>
                     </div>  
                     </div>
                     <div class="col-md-7 pt-2 align-text-bottom">
@@ -92,7 +92,7 @@
                         <p>I chose computer engineering for my university education because it was my dream. In my first year, I took the Algorithm and Programming course and improved my programming skills in the C language. In my second year, I took Data Structures and Object-Oriented Programming courses, where I learned C++ and C#. Outside of classes, I took online courses in the library to improve myself. I also learned HTML5, CSS, and the Bootstrap framework on my own, which helped me take my first steps in web development.</p>
                         <p>In the near future, I aim to learn technologies like ASP.NET and Entity Framework to build more dynamic web pages. I also plan to learn a database language like SQL to store data more efficiently. Later, I want to improve myself in mobile programming as well. I plan to learn a cross-platform mobile programming language (like Flutter). With the fast development of artificial intelligence, I, like many others, have understood the importance and value of data. For this reason, I want to focus on areas such as data science, data analysis, data management, and machine learning. I enjoy learning and discovering new things. I try to grow my career like a seed, and I hope one day it will bear fruit by doing work that benefits people and helps improve my country.</p>
                         <hr>  
-                        <h1>Kodlama </h1>
+                        <h1>Kodlama Seruvenim</h1>
                         <p>Merhaba ben İbrahim İpek. Zonguldak Bülent Ecevit Üniversitesi'nde Bilgisayar Mühendisliği Bölümünde 2. Sınıf Öğrencisiyim.</p>
                         <p>Bilgisayar kavramı hayatıma 8 yaşımda girdi. Bu kavram hayatımda yokken boş zamanlarımda bulmaca çözüyor, resim yapıyor ve kağıt üzerinde kendi tasarladığım oyunları mahallede ve okulda arkadaşlarımla oynuyordum. Teknolojinin her gün ilerlemesiyle bilgisayar artık bir ihtiyaç olmuştu. O zamanlar evimizde etkin şekilde bilgisayar kullanan bir birey yoktu. Bu yüzden bu sanal dünyayı kendi kendime kesfetmeye basladım. Daha o zamanlar kendime temel bilgisayar uygulamalarını kullanacak şekilde geliştirmeyi başardım.</p>
                         <p>Ortaokula başladığım zaman, derslerde blok tabanlı kodlama programı olan Scratch ile basit oyunlar yapmayı öğrenmeye başladım. Sürekli oynadığım oyunları kendi başıma tasarlayabilme fikri beni büyüledi. Daha sonraları Kodu Game Lab ile yine blok tabanlı ama bu sefer 3 boyutlu oyunlar yapmayı öğrendim. Bu blok tabanlı kodlama serüveni beni algoritma kurma ve problem çözme açısından oldukça geliştirdi.</p>
@@ -106,7 +106,7 @@
     </section>
     <section id="video" class="fixed-space">
         <div class="container-fluid bg-secondary">
-            <div class="container bg-primary border p-2">
+            <div class="container bg-primary border border-white border-2 p-2 rounded-4 shadow-lg">
                <div class="container-fluid bg-primary p-2">
                     <video src="./resources/video.mp4" controls autoplay muted class="w-100 container-fluid" style="max-width: 100%; aspect-ratio: 16/9;"></video>
                </div>
@@ -119,7 +119,12 @@
           <form id="contactForm" class="py-3 text-start">
               <div class="row">   
                   <div class="col-md-6 pt-2">
-                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message" class="form-control"></textarea>
+                      <textarea name="message" 
+                      id="message" 
+                      cols="30" rows="12"
+                      style="resize: none;" 
+                      placeholder="Enter Your Message" 
+                      class="shadow-lg form-control"></textarea>
                   </div>
                   <div class="col-md-6 pt-2">
                       <h2>Contact Us</h2>
@@ -130,7 +135,7 @@
                                       type="text"
                                       name="name"
                                       placeholder="Enter Your Name"
-                                      class="form-control"
+                                      class="form-control shadow-lg"
                                   />
                               </div>
                               <div class="col-md-6 mb-3">
@@ -138,18 +143,18 @@
                                       type="email"
                                       name="email"
                                       placeholder="Enter Your Email"
-                                      class="form-control"
+                                      class="form-control shadow-lg"
                                   />
                               </div>
                           </div>
-                          <div class="mb-3">
+                          <div class="mb-3 fixed-space">
                               <input type="text" 
                               name="subject"
-                              class="form-control" 
+                              class="form-control shadow-lg" 
                               placeholder="Subject">
                           </div>
                           <div class="d-flex justify-content-center">
-                              <button type="submit" class="btn btn-primary">Send Message</button>
+                              <button type="submit" class="btn btn-primary shadow-lg">Send Message</button>
                           </div>
                   </div>
               </div>
@@ -158,22 +163,22 @@
       </div>
   </section>
   <footer>
-      <div class="container-fluid bg-primary border-top p-2">
-        <div class="container bg-primary">
-          <div class="row text-center text-md-start">
-            <div class="col-12 col-md-4 p-2">
-              <h4>Since 2004</h4>
-            </div>
-            <div class="col-12 col-md-4 p-2">
-              <h4>&copy; 2025</h4>
-            </div>
-            <div class="col-12 col-md-4 p-2 text-md-end">
-              <h4>Made by İbrahim İpek</h4>
-            </div>
+    <div class="container-fluid bg-dark border-top p-2 text-white">
+      <div class="container bg-dark">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-4 p-2">
+            <h4>Since 2004</h4>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <h4>&copy; 2025</h4>
+          </div>
+          <div class="col-12 col-md-4 p-2 text-md-end">
+            <h4>Made by İbrahim İpek</h4>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
