@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the photo gallery and creative works of Ibrahim Ipek. Discover projects, certificates, abilities, and more on his personal portfolio site.">
-    <meta name="keywords" content="Ibrahim Ipek, photo gallery, portfolio, personal site, certificates, abilities, web developer">
+    <meta name="description" content="Discover Ibrahim Ipek's software projects, developer journey, and coding blog. Computer Engineering student passionate about web development, game design, and AI.">
+    <meta name="keywords" content="Ibrahim Ipek, Computer Engineer, software portfolio, web developer, C++, Unity, AI, game development">
     <meta name="author" content="Ibrahim Ipek">
-    <title>Ibrahim Ipek | Gallery Page</title>
+    <meta name="robots" content="index, follow">    
+    <title>Ibrahim Ipek – Computer Engineering Student & Developer Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YF5P66BZH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4YF5P66BZH');
+    </script>
 </head>
 <body>
-  <header>
-    <section id="top-header" class="bg-dark py-3 text-black border-bottom p-2">
-        <div class="container-fluid bg-dark text-white py-2">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-8 d-flex align-items-center gap-2">
-                  <i class="bi bi-arrow-return-right"></i>
-                  <h1 class="d-none d-lg-block m-0">Welcome to ibrahimipek.com</h1>
-                  <h2 class="d-block d-lg-none m-0">Welcome</h2>
-                </div>
-                <div class="col-4">
-                  <div class="d-flex justify-content-end gap-2">
-                    <a href="https://www.github.com/58Adige" class="btn btn-primary text-white" target="_blank" style="background-color: #000000;">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ibrahim-ipek-b44bb32b8/" target="_blank" class="btn btn-primary text-white" style="background-color: #0077b5;">
-                      <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/usr1" class="btn btn-primary text-white" target="_blank" style="background-color: #c13584;">
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@ibrahimipek58" class="btn btn-primary text-white" target="_blank" style="background-color: #FF0000;">
-                      <i class="bi bi-youtube"></i>
-                    </a>
+    <header>
+        <section id="top-header" class="bg-dark py-3 text-black border-bottom p-2">
+            <div class="container-fluid bg-dark text-white py-2">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-8 d-flex align-items-center gap-2">
+                      <i class="bi bi-arrow-return-right"></i>
+                      <h1 class="d-none d-lg-block m-0 animate__animated animate__bounce">ibrahimipek.me</h1>
+                      <h2 class="d-block d-lg-none m-0 animate__animated animate__bounce">ibrahimipek.me</h2>
+                    </div>
+                    <div class="col-4">
+                      <div class="d-flex justify-content-end gap-2">
+                        <a href="https://www.github.com/58Adige" aria-label="Ibrahim Ipek's GitHub Profile" class="btn btn-primary text-white" target="_blank" style="background-color: #000000;">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ibrahim-ipek-b44bb32b8/" aria-label="Ibrahim Ipek's LinkedIn Profile" target="_blank" class="btn btn-primary text-white" style="background-color: #0077b5;">
+                          <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/usr1" aria-label="Ibrahim Ipek's Instagram Profile" class="btn btn-primary text-white" target="_blank" style="background-color: #c13584;">
+                          <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ibrahimipek58" aria-label="Ibrahim Ipek's Youtube Profile" class="btn btn-primary text-white" target="_blank" style="background-color: #FF0000;">
+                          <i class="bi bi-youtube"></i>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-    </section>
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 sticky-top">
-        <div class="container-fluid fixed-space">
-            <div class="container bg-secondary">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navmenu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto border-bottom">
-                        <li class="nav-item"><a href="./home.html" class="nav-link"><strong>Home</strong></a></li>
-                        <li class="nav-item"><a href="./home.html#about" class="nav-link"><strong>About Me</strong></a></li>
-                        <li class="nav-item"><a href="./home.html#video" class="nav-link"><strong>Listen From Me</strong></a></li>
-                        <li class="nav-item"><a href="./cv.html#cv" class="nav-link"><strong>My CV</strong></a></li>
-                        <li class="nav-item"><a href="./cv.html#abilities" class="nav-link"><strong>Abilities</strong></a></li>
-                        <li class="nav-item"><a href="./cv.html#certificates" class="nav-link"><strong>Certificates</strong></a></li>
-                        <li class="nav-item"><a href="./photogallery.html#photos" class="nav-link"><strong>Gallery</strong></a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link"><strong>Contact</strong></a></li>
-                    </ul>
+        </section>
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 sticky-top">
+            <div class="container-fluid fixed-space">
+                <div class="container bg-secondary">
+                    <button class="navbar-toggler" type="button" aria-controls="navmenu" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navmenu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto border-bottom">
+                            <li class="nav-item"><a href="./home.html" class="nav-link"><strong>Home</strong></a></li>
+                            <li class="nav-item"><a href="./home.html#about" class="nav-link"><strong>About Me</strong></a></li>
+                            <li class="nav-item"><a href="./home.html#video" class="nav-link"><strong>Listen From Me</strong></a></li>
+                            <li class="nav-item"><a href="./cv.html" class="nav-link"><strong>My CV</strong></a></li>
+                            <li class="nav-item"><a href="./cv.html#abilities" class="nav-link"><strong>Abilities</strong></a></li>
+                            <li class="nav-item"><a href="./cv.html#certificates" class="nav-link"><strong>Certificates</strong></a></li>
+                            <li class="nav-item"><a href="./photogallery.html" class="nav-link"><strong>Gallery</strong></a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link"><strong>Contact</strong></a></li>
+                          </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-</header>
+              </div>
+        </nav>
+    </header>
     <section id="photos" class="fixed-space">
         <div class="container-fluid bg-secondary">
             <div class="container bg-primary border rounded-4 p-2 shadow-lg">
                 <div class="row">
                     <div class="col text-start">
-                       <img id="mainImage" src="./resources/cr16.jpg" alt="Loading..." class="img-fluid mb-3 border">
+                       <img id="mainImage" src="./resources/bootstrap5.jpg" alt="Loading..." class="img-fluid mb-3 border">
                        <div class="container bg-primary py-2">
                         <p id="imageDescription">BTK - Bootstrop 5 Katilim Sertifikasi</p>
                         </div> 
                     </div>
                     <div class="container">
                      <div class="thumbnail-slider d-flex overflow-auto gap-2 p-2 border bg-dark">
-                      <img src="./resources/cr1.jpg" class="img-thumbnail thumb" alt="Huawei - Arge Bulusmasi Katilim Sertifikasi" data-description="Huawei - Arge Bulusmasi Katilim Sertifikasi">
-                      <img src="./resources/cr2.jpg" class="img-thumbnail thumb" alt="Etkin Kampus - Canva Kariyer Zirvesi Katilim Sertifikasi" data-description="Etkin Kampus - Canva Kariyer Zirvesi Katilim Sertifikasi">
-                      <img src="./resources/cr3.jpg" class="img-thumbnail thumb" alt="BTK - C Programlama Dili Katilim Sertifikasi" data-description="BTK - C Programlama Dili Katilim Sertifikasi">
-                      <img src="./resources/cr4.jpg" class="img-thumbnail thumb" alt="BTK - Bilgi Teknolojilerine Giris Katilim Sertifikasi" data-description="BTK - Bilgi Teknolojilerine Giris Katilim Sertifikasi">
-                      <img src="./resources/cr5.jpg" class="img-thumbnail thumb" alt="BTK - E-Ticarete Giris Katilim Sertifikasi" data-description="BTK - E-Ticarete Giris Katilim Sertifikasi">
-                      <img src="./resources/cr6.jpg" class="img-thumbnail thumb" alt="Gelecegi Yazanlar - Temel Bilgisayar Katilim Sertifikasi" data-description="Gelecegi Yazanlar - Temel Bilgisayar Katilim Sertifikasi">
-                      <img src="./resources/cr7.jpg" class="img-thumbnail thumb" alt="BTK - Ikna Becerileri Katilim Sertifikasi" data-description="BTK - Ikna Becerileri Katilim Sertifikasi">
-                      <img src="./resources/cr8.jpg" class="img-thumbnail thumb" alt="BTK - Kariyerde Hedef Bulma Katilim Sertifikasi" data-description="BTK - Kariyerde Hedef Bulma Katilim Sertifikasi">
-                      <img src="./resources/cr9.jpg" class="img-thumbnail thumb" alt="BTK - Topluluk Onunde Konusma ve Etkili Sunum Teknikleri Katilim Sertifikasi" data-description="BTK - Topluluk Onunde Konusma ve Etkili Sunum Teknikleri Katilim Sertifikasi">
-                      <img src="./resources/cr10.jpg" class="img-thumbnail thumb" alt="BTK - A1 Seviye Ingilizce Katilim Sertifikasi" data-description="BTK - A1 Seviye Ingilizce Katilim Sertifikasi">
-                      <img src="./resources/cr11.jpg" class="img-thumbnail thumb" alt="Gelecegi Yazanlar - Word Egitimi Katilim Sertifikasi" data-description="Gelecegi Yazanlar - Word Egitimi Katilim Sertifikasi">
-                      <img src="./resources/cr12.jpg" class="img-thumbnail thumb" alt="BTK - C# Programlama Katilim Sertifikasi" data-description="BTK - C# Programlama Katilim Sertifikasi">
-                      <img src="./resources/cr13.jpg" class="img-thumbnail thumb" alt="BTK - C++ Programalaya Giris Katilim Sertifikasi" data-description="BTK - C++ Programalaya Giris Katilim Sertifikasi">
-                      <img src="./resources/cr14.jpg" class="img-thumbnail thumb" alt="BTK - Versiyon Kontrolleri: Git ve Github Katilim Sertifikasi" data-description="BTK - Versiyon Kontrolleri: Git ve Github Katilim Sertifikasi">
-                      <img src="./resources/cr15.jpg" class="img-thumbnail thumb" alt="BTK - HTML5 ile Web Gelistirme Katilim Sertifikasi" data-description="BTK - HTML5 ile Web Gelistirme Katilim Sertifikasi">
-                      <img src="./resources/cr16.jpg" class="img-thumbnail thumb" alt="BTK - Bootstrop 5 Katilim Sertifikasi" data-description="BTK - Bootstrop 5 Katilim Sertifikasi">
+                      <img src="./resources/huawei.jpg" class="img-thumbnail thumb" alt="Huawei - Arge Bulusmasi Katilim Sertifikasi" data-description="Huawei - Arge Bulusmasi Katilim Sertifikasi">
+                      <img src="./resources/canva.jpg" class="img-thumbnail thumb" alt="Etkin Kampus - Canva Kariyer Zirvesi Katilim Sertifikasi" data-description="Etkin Kampus - Canva Kariyer Zirvesi Katilim Sertifikasi">
+                      <img src="./resources/c-language.jpg" class="img-thumbnail thumb" alt="BTK - C Programlama Dili Katilim Sertifikasi" data-description="BTK - C Programlama Dili Katilim Sertifikasi">
+                      <img src="./resources/information-technologies.jpg" class="img-thumbnail thumb" alt="BTK - Bilgi Teknolojilerine Giris Katilim Sertifikasi" data-description="BTK - Bilgi Teknolojilerine Giris Katilim Sertifikasi">
+                      <img src="./resources/e-commerce.jpg" class="img-thumbnail thumb" alt="BTK - E-Ticarete Giris Katilim Sertifikasi" data-description="BTK - E-Ticarete Giris Katilim Sertifikasi">
+                      <img src="./resources/computer-technologies.jpg" class="img-thumbnail thumb" alt="Gelecegi Yazanlar - Temel Bilgisayar Katilim Sertifikasi" data-description="Gelecegi Yazanlar - Temel Bilgisayar Katilim Sertifikasi">
+                      <img src="./resources/persuasive-communication-skills.jpg" class="img-thumbnail thumb" alt="BTK - Ikna Becerileri Katilim Sertifikasi" data-description="BTK - Ikna Becerileri Katilim Sertifikasi">
+                      <img src="./resources/carrier-planning.jpg" class="img-thumbnail thumb" alt="BTK - Kariyerde Hedef Bulma Katilim Sertifikasi" data-description="BTK - Kariyerde Hedef Bulma Katilim Sertifikasi">
+                      <img src="./resources/communication.jpg" class="img-thumbnail thumb" alt="BTK - Topluluk Onunde Konusma ve Etkili Sunum Teknikleri Katilim Sertifikasi" data-description="BTK - Topluluk Onunde Konusma ve Etkili Sunum Teknikleri Katilim Sertifikasi">
+                      <img src="./resources/english-a1.jpg" class="img-thumbnail thumb" alt="BTK - A1 Seviye Ingilizce Katilim Sertifikasi" data-description="BTK - A1 Seviye Ingilizce Katilim Sertifikasi">
+                      <img src="./resources/word.jpg" class="img-thumbnail thumb" alt="Gelecegi Yazanlar - Word Egitimi Katilim Sertifikasi" data-description="Gelecegi Yazanlar - Word Egitimi Katilim Sertifikasi">
+                      <img src="./resources/csharp-language.jpg" class="img-thumbnail thumb" alt="BTK - C# Programlama Katilim Sertifikasi" data-description="BTK - C# Programlama Katilim Sertifikasi">
+                      <img src="./resources/cpp-language.jpg" class="img-thumbnail thumb" alt="BTK - C++ Programalaya Giris Katilim Sertifikasi" data-description="BTK - C++ Programalaya Giris Katilim Sertifikasi">
+                      <img src="./resources/git-github.jpg" class="img-thumbnail thumb" alt="BTK - Versiyon Kontrolleri: Git ve Github Katilim Sertifikasi" data-description="BTK - Versiyon Kontrolleri: Git ve Github Katilim Sertifikasi">
+                      <img src="./resources/html5.jpg" class="img-thumbnail thumb" alt="BTK - HTML5 ile Web Gelistirme Katilim Sertifikasi" data-description="BTK - HTML5 ile Web Gelistirme Katilim Sertifikasi">
+                      <img src="./resources/bootstrap5.jpg" class="img-thumbnail thumb" alt="BTK - Bootstrop 5 Katilim Sertifikasi" data-description="BTK - Bootstrop 5 Katilim Sertifikasi">
                     </div>
                   </div>
                 </div>
@@ -114,7 +124,7 @@
                   </div>
                   <div class="col-md-6 pt-2">
                       <h2>Contact Us</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, rerum!</p>
+                      <p>Drop me a message below — I will get back to you via email!</p>
                           <div class="row mb-3">
                               <div class="col-md-6 mb-3">
                                   <input 
@@ -127,6 +137,7 @@
                               <div class="col-md-6 mb-3">
                                   <input 
                                       type="email"
+                                      required
                                       name="email"
                                       placeholder="Enter Your Email"
                                       class="form-control shadow-lg"
@@ -148,21 +159,11 @@
           </div>
       </div>
   </section>
-  <footer>
-    <div class="container-fluid bg-dark border-top p-2 text-white">
-      <div class="container bg-dark">
-        <div class="row text-center text-md-start">
-          <div class="col-12 col-md-4 p-2">
-            <h4>Since 2004</h4>
-          </div>
-          <div class="col-12 col-md-4 p-2">
-            <h4>&copy; 2025</h4>
-          </div>
-          <div class="col-12 col-md-4 p-2 text-md-end">
-            <h4>Made by İbrahim İpek</h4>
-          </div>
-        </div>
-      </div>
+  <footer class="bg-dark text-white py-4 fixed-space">
+    <div class="container text-center">
+      <h5>İbrahim İpek</h5>
+      <p>Zonguldak Bülent Ecevit Üniversitesi | Bilgisayar Mühendisliği Öğrencisi</p>
+      <p class="mb-0">© 2025 İbrahim İpek. Tüm hakları saklıdır.</p>
     </div>
   </footer>
 
